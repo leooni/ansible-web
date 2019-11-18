@@ -10,23 +10,23 @@
             <div class="modal-body">
                 <form class="form-horizontal">
                     <div class="form-group">
-                        <label class="col-sm-3 control-label" for="textInput">Hostname</label>
+                        <label class="col-sm-3 control-label" for="vm_custom_name">Hostname</label>
                         <div class="col-sm-9">
-                            <input type="text" id="textInput" class="form-control"></div>
+                            <input type="text" id="vm_custom_name" class="form-control"></div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-3 control-label" for="textInput2">Quantidade de servidores</label>
+                        <label class="col-sm-3 control-label" for="num_vms">Quantidade de servidores</label>
                         <div class="col-sm-9">
-                                <input class="bootstrap-touchspin form-control" id="bootstrap-touchspin-empty" type="text" value="" name="bootstrap-touchspin-empty">
+                                <input class="bootstrap-touchspin form-control" id="num_vms" type="text" value="" name="bootstrap-touchspin-empty">
                                 <script>
                                     $(".bootstrap-touchspin").TouchSpin();
                                 </script>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-3 control-label" for="textInput3">Ambiente do servidor</label>
+                        <label class="col-sm-3 control-label" for="enviroment">Ambiente do servidor</label>
                         <div class="col-sm-9">
-                        <select class="form-control">
+                        <select class="form-control" id="enviroment">
                         <option> DEV </option>
                         <option> QA </option>
                         <option> PROD </option>
@@ -35,34 +35,34 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label class="col-sm-3 control-label" for="textInput4">VCPU</label>
+                        <label class="col-sm-3 control-label" for="vm_cpus">VCPU</label>
                         <div class="col-sm-9">
-                            <input type="text" id="textInput4" class="form-control">
+                            <input type="text" id="vm_cpus" class="form-control">
                         </div>
                     </div>
                       <div class="form-group">
-                        <label class="col-sm-3 control-label" for="textInput5">Memory</label>
+                        <label class="col-sm-3 control-label" for="vm_memory">Memory</label>
                         <div class="col-sm-9">
-                            <input type="text" id="textInput5" class="form-control">
+                            <input type="text" id="vm_memory" class="form-control">
                         </div>
                     </div>
                        <div class="form-group">
-                        <label class="col-sm-3 control-label" for="textInput6">Storage</label>
+                        <label class="col-sm-3 control-label" for="vm_disk">Storage</label>
                         <div class="col-sm-9">
-                            <input type="text" id="textInput6" class="form-control">
+                            <input type="text" id="vm_disk" class="form-control">
                         </div>
                     </div>
 
                        <div class="form-group">
-                        <label class="col-sm-3 control-label" for="textInput7">Network</label>
+                        <label class="col-sm-3 control-label" for="vm_net">Network</label>
                         <div class="col-sm-9">
-                            <input type="text" id="textInput7" class="form-control">
+                            <input type="text" id="vm_net" class="form-control">
                         </div>
                     </div>
                        <div class="form-group">
-                        <label class="col-sm-3 control-label" for="textInput8">Esse servidor pertence a qual inventário?</label>
+                        <label class="col-sm-3 control-label" for="inventory_tower">Esse servidor pertence a qual inventário?</label>
                         <div class="col-sm-9">
-                        <select class="form-control">
+                        <select class="form-control" id="inventory_tower">
                         <option> infra </option>
                         </select>
 

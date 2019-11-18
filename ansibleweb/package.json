@@ -25,6 +25,7 @@
     "express": "^4.17.1",
     "jquery-match-height": "^0.7.2",
     "patternfly": "^3.59.4",
-    "pkginfo": "^0.4.1"
+    "pkginfo": "^0.4.1",
+    "request": "^2.81.0"
   }
 }
