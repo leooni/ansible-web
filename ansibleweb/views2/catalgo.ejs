@@ -1,0 +1,41 @@
+html class="layout-pf layout-pf-fixed">
+
+<link rel="stylesheet" href="scripts/patternfly/dist/css/patternfly.min.css">
+<link rel="stylesheet" href="scripts/patternfly/dist/css/patternfly.css">
+<link rel="stylesheet" href="scripts/patternfly/dist/css/patternfly-additions.min.css">
+
+<!-- JS -->
+<script src="scripts/jquery/dist/jquery.min.js"></script>
+<script src="scripts/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="scripts/patternfly/dist/js/patternfly.min.js"></script>
+
+<!-- C3, D3 - Charting Libraries -->
+<script src="scripts/d3/d3.min.js"></script>
+<script src="scripts/c3/c3.min.js"></script>
+
+<script src="scripts/jquery-match-height/dist/jquery.matchHeight-min.js"></script>
+
+<% include ../views/navbar.ejs %>
+<% include ../views/vertical_menu.ejs %>
+<% include ../views/about.ejs %>
+
+<div class="container-fluid container-cards-pf container-pf-nav-pf-vertical hide-nav-pf">
+  <div class="row row-cards-pf">
+    <!-- Important:  if you need to nest additional .row within a .row.row-cards-pf, do *not* use .row-cards-pf on the nested .row  -->
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <div class="card-pf card-pf-accented card-pf-aggregate-status">
+        <h2 class="card-pf-title">
+          <span class="fa fa-shield"></span><span class="card-pf-aggregate-status-count">0</span> Ipsum
+        </h2>
+        <div class="card-pf-body">
+          <p class="card-pf-aggregate-status-notifications">
+            <span class="card-pf-aggregate-status-notification"><a href="#" class="add" data-toggle="tooltip"
+                data-placement="top" title="Add Ipsum"><span class="pficon pficon-add-circle-o"></span></a></span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+</html>
+
+
