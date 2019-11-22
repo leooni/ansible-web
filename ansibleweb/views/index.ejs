@@ -16,6 +16,13 @@
 
 <script src="scripts/jquery-match-height/dist/jquery.matchHeight-min.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+<script>
+  axios.get('http://localhost:3000/api/vms')
+    .then(response => console.log(response))
+    .catch(error => console.log(error))
+</script>
+
 <% include ../views/navbar.ejs %>
 <% include ../views/vertical_menu.ejs %>
 <% include ../views/about.ejs %>
